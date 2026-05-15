@@ -1,0 +1,75 @@
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useReportStore } from '@/store/reportStore'
+import { cn } from '@/utils'
+
+type PaginationProps = {
+  totalPages: number
+  total: number
+}
+
+export const ReportPagination = ({ totalPages, total }: PaginationProps) => {
+  const { filters, setPage } = useReportStore()
+  const { page, pageSize } = filters
+
+  if (totalPages <= 1) return null
+
+  const start = (page - 1) * pageSize + 1
+  const end = Math.min(page * pageSize, total)
+
+  const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
+
+  return (
+    <div className="flex items-center justify-between border-t border-border pt-4">
+      <span className="text-xs text-text-secondary">
+        Showing {start}–{end} of {total} reports
+      </span>
+      <div className="flex items-center gap-1" role="navigation" aria-label="Pagination">
+        <button
+          onClick={() => setPage(page - 1)}
+          disabled={page === 1}
+          aria-label="Previous page"
+          className={cn(
+            'flex h-8 w-8 items-center justify-center rounded-lg border border-border text-text-secondary',
+            'hover:bg-hover hover:text-text-primary transition-colors',
+            'disabled:pointer-events-none disabled:opacity-40',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40',
+          )}
+        >
+          <ChevronLeft size={14} />
+        </button>
+
+        {pages.map((p) => (
+          <button
+            key={p}
+            onClick={() => setPage(p)}
+            aria-label={`Page ${p}`}
+            aria-current={p === page ? 'page' : undefined}
+            className={cn(
+              'flex h-8 w-8 items-center justify-center rounded-lg text-xs font-medium transition-colors',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40',
+              p === page
+                ? 'bg-brand text-white'
+                : 'border border-border text-text-secondary hover:bg-hover hover:text-text-primary',
+            )}
+          >
+            {p}
+          </button>
+        ))}
+
+        <button
+          onClick={() => setPage(page + 1)}
+          disabled={page === totalPages}
+          aria-label="Next page"
+          className={cn(
+            'flex h-8 w-8 items-center justify-center rounded-lg border border-border text-text-secondary',
+            'hover:bg-hover hover:text-text-primary transition-colors',
+            'disabled:pointer-events-none disabled:opacity-40',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40',
+          )}
+        >
+          <ChevronRight size={14} />
+        </button>
+      </div>
+    </div>
+  )
+}

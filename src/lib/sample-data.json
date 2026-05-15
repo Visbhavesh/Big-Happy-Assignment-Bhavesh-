@@ -1,0 +1,178 @@
+{
+  "deals": [
+    {
+      "id": "deal-001",
+      "name": "Horizon Media — Q3 Programmatic",
+      "advertiser": "Horizon Media",
+      "agency": "GroupM",
+      "status": "active",
+      "priority": "high",
+      "flightStart": "2024-07-01",
+      "flightEnd": "2024-09-30",
+      "salesRep": "Jordan Ellis",
+      "accountManager": "Priya Nair",
+      "dealType": "Programmatic Guaranteed",
+      "vertical": "Retail",
+      "kpis": {
+        "impressionsBooked": 42000000,
+        "impressionsDelivered": 31850000,
+        "clicksDelivered": 94200,
+        "conversions": 3810,
+        "viewabilityRate": 72.4,
+        "completionRate": 68.1,
+        "ctr": 0.296,
+        "cpm": 8.5,
+        "ecpm": 8.92,
+        "vcr": 68.1
+      },
+      "budget": {
+        "totalBudget": 357000,
+        "spentToDate": 268900,
+        "remainingBudget": 88100,
+        "dailyBudget": 3966,
+        "projectedSpend": 341200,
+        "pacingStatus": "slightly_behind",
+        "pacingPercent": 75.3
+      },
+      "delivery": {
+        "deliveryPercent": 75.8,
+        "daysElapsed": 57,
+        "totalDays": 92,
+        "daysRemaining": 35,
+        "expectedDeliveryPercent": 61.9,
+        "deliveryStatus": "ahead"
+      },
+      "weeklyTrend": [
+        { "week": "W1", "impressions": 4200000, "spend": 35700, "ctr": 0.28 },
+        { "week": "W2", "impressions": 5100000, "spend": 43350, "ctr": 0.31 },
+        { "week": "W3", "impressions": 4800000, "spend": 40800, "ctr": 0.29 },
+        { "week": "W4", "impressions": 5600000, "spend": 47600, "ctr": 0.33 },
+        { "week": "W5", "impressions": 5300000, "spend": 45050, "ctr": 0.30 },
+        { "week": "W6", "impressions": 6850000, "spend": 58225, "ctr": 0.34 }
+      ],
+      "topCreatives": [
+        { "id": "cr-01", "name": "Summer Sale 300x250", "impressions": 12400000, "ctr": 0.34, "status": "active" },
+        { "id": "cr-02", "name": "Back to School 728x90", "impressions": 9800000, "ctr": 0.27, "status": "active" },
+        { "id": "cr-03", "name": "Brand Awareness 160x600", "impressions": 9650000, "ctr": 0.25, "status": "paused" }
+      ]
+    },
+    {
+      "id": "deal-002",
+      "name": "Apex Auto — Brand Awareness",
+      "advertiser": "Apex Automotive",
+      "agency": "Publicis",
+      "status": "active",
+      "priority": "medium",
+      "flightStart": "2024-06-15",
+      "flightEnd": "2024-08-31",
+      "salesRep": "Marcus Webb",
+      "accountManager": "Sofia Reyes",
+      "dealType": "Private Marketplace",
+      "vertical": "Automotive",
+      "kpis": {
+        "impressionsBooked": 18000000,
+        "impressionsDelivered": 9540000,
+        "clicksDelivered": 22100,
+        "conversions": 890,
+        "viewabilityRate": 68.9,
+        "completionRate": 71.3,
+        "ctr": 0.232,
+        "cpm": 12.4,
+        "ecpm": 13.1,
+        "vcr": 71.3
+      },
+      "budget": {
+        "totalBudget": 223200,
+        "spentToDate": 118300,
+        "remainingBudget": 104900,
+        "dailyBudget": 2924,
+        "projectedSpend": 198400,
+        "pacingStatus": "behind",
+        "pacingPercent": 53.0
+      },
+      "delivery": {
+        "deliveryPercent": 53.0,
+        "daysElapsed": 47,
+        "totalDays": 77,
+        "daysRemaining": 30,
+        "expectedDeliveryPercent": 61.0,
+        "deliveryStatus": "behind"
+      },
+      "weeklyTrend": [
+        { "week": "W1", "impressions": 1200000, "spend": 14880, "ctr": 0.21 },
+        { "week": "W2", "impressions": 1450000, "spend": 17980, "ctr": 0.23 },
+        { "week": "W3", "impressions": 1680000, "spend": 20832, "ctr": 0.24 },
+        { "week": "W4", "impressions": 1590000, "spend": 19716, "ctr": 0.22 },
+        { "week": "W5", "impressions": 1820000, "spend": 22568, "ctr": 0.25 },
+        { "week": "W6", "impressions": 1800000, "spend": 22320, "ctr": 0.23 }
+      ],
+      "topCreatives": [
+        { "id": "cr-04", "name": "Model X Launch :30s", "impressions": 5200000, "ctr": 0.26, "status": "active" },
+        { "id": "cr-05", "name": "Dealer Locator 300x600", "impressions": 4340000, "ctr": 0.21, "status": "active" }
+      ]
+    },
+    {
+      "id": "deal-003",
+      "name": "NovaTech — Product Launch",
+      "advertiser": "NovaTech Inc.",
+      "agency": "Direct",
+      "status": "pacing_alert",
+      "priority": "high",
+      "flightStart": "2024-08-01",
+      "flightEnd": "2024-10-31",
+      "salesRep": "Jordan Ellis",
+      "accountManager": "Priya Nair",
+      "dealType": "Preferred Deal",
+      "vertical": "Technology",
+      "kpis": {
+        "impressionsBooked": 30000000,
+        "impressionsDelivered": 6200000,
+        "clicksDelivered": 31000,
+        "conversions": 1540,
+        "viewabilityRate": 81.2,
+        "completionRate": 74.8,
+        "ctr": 0.5,
+        "cpm": 15.0,
+        "ecpm": 14.6,
+        "vcr": 74.8
+      },
+      "budget": {
+        "totalBudget": 450000,
+        "spentToDate": 93000,
+        "remainingBudget": 357000,
+        "dailyBudget": 4945,
+        "projectedSpend": 390000,
+        "pacingStatus": "behind",
+        "pacingPercent": 20.7
+      },
+      "delivery": {
+        "deliveryPercent": 20.7,
+        "daysElapsed": 19,
+        "totalDays": 92,
+        "daysRemaining": 73,
+        "expectedDeliveryPercent": 20.7,
+        "deliveryStatus": "on_track"
+      },
+      "weeklyTrend": [
+        { "week": "W1", "impressions": 1800000, "spend": 27000, "ctr": 0.48 },
+        { "week": "W2", "impressions": 2100000, "spend": 31500, "ctr": 0.51 },
+        { "week": "W3", "impressions": 2300000, "spend": 34500, "ctr": 0.52 }
+      ],
+      "topCreatives": [
+        { "id": "cr-06", "name": "Launch Hero 970x250", "impressions": 3400000, "ctr": 0.55, "status": "active" },
+        { "id": "cr-07", "name": "Feature Highlight 300x250", "impressions": 2800000, "ctr": 0.44, "status": "active" }
+      ]
+    }
+  ],
+  "summary": {
+    "totalDeals": 3,
+    "activeDeals": 2,
+    "pacingAlerts": 1,
+    "totalBudget": 1030200,
+    "totalSpent": 480200,
+    "totalImpressions": 90000000,
+    "totalDelivered": 47590000,
+    "avgViewability": 74.2,
+    "avgCtr": 0.343
+  }
+}
