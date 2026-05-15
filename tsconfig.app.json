@@ -24,7 +24,7 @@
     "strict": true,
     "ignoreDeprecations": "5.0",
     "resolveJsonModule": true,
-    "baseUrl": ".",
+    // "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }

@@ -5,7 +5,6 @@ import { X } from 'lucide-react'
 import { useUIStore } from '@/store/uiStore'
 import { NAV_SECTIONS } from '@/lib/navConfig'
 import { SidebarItem } from './SidebarItem'
-import { cn } from '@/utils'
 
 export const MobileDrawer = () => {
   const { mobileDrawerOpen, closeMobileDrawer } = useUIStore()
